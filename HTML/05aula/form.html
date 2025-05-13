@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body style="background-color: violet;">
+
+    <h1>Formulário Importantíssimo (Preencha!!!)</h1>
+
+    <form action="mailto:rochalirathiago@outlook.com" method="post">
+        <!--action = local para onde será enviada a informação do formulário quando ele for submetido.-->
+
+        <!--for = para | esse label é para o elemento nomeUsuario-->
+        <label for="nomeUsuario">Nome:</label> <!--label = Rótulo-->
+        <input type="text" name="nome" id="nomeUsuario" required="Insira algo.." size="30" maxlength="15">
+        <!--a propriedade maxlength determina a quantidade maxima de caracteres que seu input pode receber-->
+
+        <br><br>
+
+        <label for="sobrenomeUsuario">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenomeUsuario" required="Insira algo.." size="30" maxlength="15">
+
+        <br><br>
+
+        <label for="idadeUsuario">Idade:</label>
+        <input type="number" name="Idade" id="idadeUsuario" required="Insira algo.." size="4" maxlength="2">
+
+        <br><br>
+
+        <p>Gênero</p>
+        <!--radio permite que o usuário escolha apenas uma opção de várias. para identificar se radios diferentes respondem a mesma pergunta, colocamos o mesmo for-->
+        <!--o nome de cada input pode se repetir, porém o id não, ele deve ser único-->
+        <input type="radio" name="genero" value="F" id="generoUsuario">
+        <label for="generoUsuario">Feminino</label>
+
+        <br>
+
+        <input type="radio" name="genero" value="M" id="generoUsuario">
+        <label for="generoUsuario">Masculino</label>
+
+        <br>
+
+        <input type="radio" name="genero" id="generoUsuario">
+        <label for="generoUsuario">Não-binário</label>
+
+        <br>
+
+        <input type="radio" name="genero" value="NB" id="generoUsuario">
+        <label for="generoUsuario">Prefiro não informar</label>
+
+        <br>
+
+        <input type="radio" name="genero" value="#" id="generoUsuario">
+        <label for="generoUsuario">Outro</label>
+        <input type="text" maxlength="10">
+
+        <br><br>
+
+
+
+        <p>Selecione a região na qual você mora:</p>
+        <select name="regioes" id="regiaoUsuario">
+            <option value="Norte">Norte</option>
+            <option value="Sul">Sul</option>
+            <option value="Leste">Leste</option>
+            <option value="Oeste">Oeste</option>
+            <option value="Central">Central</option>
+        </select>
+        <!--o select cria uma lista suspensa, na qual você escolhe dentro das opções disponíveis-->
+        <br><br>
+
+        <label for="enderecoUsuario">Insira seu endereço:</label> <br>
+        <textarea name="endereco" id="enderecoUsuario" cols="50" rows="2"></textarea>
+        <!--textarea é um elemento do formulário que serve para inserir textos em grandes quantidades. você pode definir o tamanho da área da caixa utilizando col e row. -->
+
+        <br><br>
+
+        <p>Selecione seu meio de transporte:</p>
+        <input autocomplete="on" list="transporte" name="transporteUsuario" id="transporteUsuario"
+            placeholder="Seu Transporte">
+
+        <datalist id="transporte">
+            <option value="Metrô"></option>
+            <option value="Ônibus"></option>
+            <option value="Carro"></option>
+            <option value="Bicicleta"></option>
+            <option value="Moto"></option>
+        </datalist>
+        <!--datalist cria uma lista com opções pré-definidas que apresenta sugestões para o usuário conforme ele vai digitando-->
+        <!--<option> e o atributo value determina qual valor será enviado ao banco de dados.-->
+        <br><br>
+        <p>Selecione a(s) bebida(s) que gosta:</p>
+
+        <!-- o checkbox permite que o usuário escolha uma ou mais opções-->
+        <input type="checkbox" name="bebida1" id="bebida1">
+        <label for="bebida1">Cerveja</label>
+
+        <br>
+
+        <input type="checkbox" name="bebida2" id="bebida2">
+        <label for="bebida2">Corotinho</label>
+
+        <br>
+
+        <input type="checkbox" name="bebida3" id="bebida3">
+        <label for="bebida3">Velho Barreiro</label>
+
+        <br>
+
+        <input type="checkbox" name="bebida4" id="bebida4">
+        <label for="bebida4">Pitú</label>
+
+        <br>
+
+        <input type="checkbox" name="bebida5" id="bebida5">
+        <label for="bebida5">Vinho</label>
+
+        <br>
+
+        <input type="checkbox" name="bebida6" id="bebida6">
+        <label for="bebida6">Tequila</label>
+
+        <br>
+
+        <input type="checkbox" name="bebida7" id="bebida7">
+        <label for="bebida7">Pinga</label>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+
+</html>
