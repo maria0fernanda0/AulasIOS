@@ -1,0 +1,50 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    background-color: deeppink;
+}
+
+body{
+    background-image: url(assets/laricelIA.webp);
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+img {
+    width: 40vw;
+    height: 30vh;
+}
+
+input{
+    color: rgb(53, 0, 114);
+}
+
+label{
+    color: rgb(53, 0, 114);
+}
+
+form{
+    justify-content: center;
+    display: grid;
+    color: black;
+}
+
+.imagemPlano{
+    width: 200px;
+    height: 500px;
+}
+
+#dadosCliente{
+    background-color: deeppink ;
+}
+
+#planos{
+    background-color: deeppink;
+}
